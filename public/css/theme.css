@@ -1,0 +1,33 @@
+.pt-4, .py-4 {
+    padding-top: 8.5rem !important;
+}
+.card {
+    border-radius:5px;
+}
+.btn-primary{color:#000;background-color:#ffba50;border-color:#ffba50}
+.btn-primary:hover{color:#000;background-color:#ffba50;border-color:#ffba50}
+.btn-primary.focus,.btn-primary:focus{box-shadow:0 0 0 .2rem rgba(52,144,220,.5)}
+.btn-primary.disabled,.btn-primary:disabled{color:#000;background-color:#3490dc;border-color:#3490dc}
+
+.btn-primary{color:#000;background-color:#ffba50;border-color:#ffba50}
+.btn-primary:hover{color:#fff;background-color:#000;border-color:#000}
+.btn-primary.focus,.btn-primary:focus{box-shadow:0 0 0 .2rem #ffba50}
+.btn-primary.disabled,.btn-primary:disabled{color:#000;background-color:#ffba50;border-color:#ffba50}
+.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{color:#000;background-color:#ffba50;border-color:#2d698c}
+
+.nav-item .active {
+    background-color:#ffba50!important;
+}
+.sidebar-dark-primary {
+    background-color: #000 !important;
+}
+.bg-primary {
+    background-color: #000 !important;
+}
+.btn-outline-primary {
+    color: #000;
+    border-color: #000;
+}
+.card-primary.card-outline {
+    border-top: 3px solid #000;
+}

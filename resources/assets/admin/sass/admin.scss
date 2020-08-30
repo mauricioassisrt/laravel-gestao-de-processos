@@ -1,0 +1,49 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Icons
+@import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Admin LTE
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+// Gijgo DatePicker
+@import '~gijgo/css/gijgo.min.css';
+
+// Datatables
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.min.css';
+@import '~datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css';
+
+.nav-item {
+  .active {
+    background-color: $primary !important;
+  }
+}
+
+.nav-treeview > {
+  .nav-item {
+    .active {
+      color: #fff !important;
+      background-color: rgba(255, 255, 255, .1) !important;
+    }
+  }
+}
+
+.nav-tabs {
+  .nav-item {
+    .active {
+      color: white;
+    }
+  }
+}
+
+.tab-content{
+  background: #f8fafc !important;
+  padding: 20px;
+}

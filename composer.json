@@ -1,0 +1,88 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3",
+        "barryvdh/laravel-cors": "^0.11.3",
+        "dimsav/laravel-translatable": "^9.4",
+        "doctrine/dbal": "^2.9",
+        "fideloper/proxy": "^4.0",
+        "folklore/image": "0.3.*",
+        "fzaninotto/faker": "^1.4",
+        "geekcom/validator-docs": "^1.5",
+        "guzzlehttp/guzzle": "^6.3",
+        "laracasts/flash": "^3.0",
+        "laravel/framework": "5.8.*",
+        "laravel/tinker": "^1.0",
+        "laravelcollective/html": "^5.8",
+        "lucascudo/laravel-pt-br-localization": "^1.0",
+        "tymon/jwt-auth": "dev-develop#ef07317a33f5b5269f8f4e6db11d879223134646",
+        "vertice/payment-api": "dev-master",
+        "watson/active": "3.0",
+        "yajra/laravel-datatables-oracle": "~9.0"
+    },
+    "require-dev": {
+        "beyondcode/laravel-dump-server": "^1.0",
+        "filp/whoops": "^2.0",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^3.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "gitlab-token": {
+            "gitlab.com": "FggsbZzoHE5UHsR1s3x3"
+        }
+
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "repositories": {
+        "payment-api": {
+            "type": "git",
+            "url": "https://gitlab.com/vertice/packages/payment-api"
+        }
+    }
+}

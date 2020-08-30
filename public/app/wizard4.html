@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Look the Sea</title>
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Icons -->
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <!-- Styles -->
+    <link href="css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+      <!-- Sidebars -->
+      <!-- Left Sidebar -->
+      <ul id="slide-out-left" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header">
+            <div class="nav-social">
+              <i class="ion-social-facebook"></i>
+            </div>
+            <div class="nav-avatar">
+              <img class="circle avatar" src="img/logoredonda.png" alt="">
+              <div class="avatar-body">
+                <h3>Look the Sea</h3>
+                <p>Autofinanciamento</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="index-slider.html" class="no-child"><img src="img/icon-destaques.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/>Destaques</a></li>
+
+        <li><a href="mycontract.html" class="no-child"><img src="img/icon-contrato.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/>Meu contrato</a></li>
+        <li><a href="mypayments.html" class="no-child"><img src="img/icon-pagamentos.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/> Meus pagamentos</a></li>
+        <li><a href="mycredits.html" class="no-child"><img src="img/icon-ganhos.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/> Meus ganhos</a></li>
+        <li><a href="aboutus.html" class="no-child"><img src="img/icon-info.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/> Como funciona?</a></li>
+      <li><a href="costumers.html" class="no-child"><img src="img/icon-contemplados.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/> Contemplados</a></li>
+      <li><a href="simulation.html" class="no-child"><img src="img/icon-financ.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/> Simule seu financiamento</a></li>
+      <li><a href="schedule.html" class="no-child"><img src="img/icon-agenda.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/> Agende sua entrega!</a></li>
+      <li><a href="login.html" class="no-child"><img src="img/icon-afiliado.png" style="width: 25px;display:inline-flex;margin-right:10px;vertical-align:middle;"/> Seja um afiliado</a></li>
+   </ul>
+      <!-- End of Sidebars -->
+
+      <!-- Page Content -->
+      <div id="content">
+
+        <!-- Toolbar -->
+        <div id="toolbar" class="primary-color">
+          <div class="open-left" id="open-left" data-activates="slide-out-left">
+            <i class="ion-android-menu"></i>
+          </div>
+          <span class="title"></span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="animated fadeinup">
+        <!-- Blog -->
+<br><br><br>
+        <h3 class="p-20" style="text-align: center">Agora, precisamos que você faça uma foto da frente do seu documento de identidade, aonde aparece a sua foto. Certifique-se de que a foto está legível. <br />
+            <img id="w4_identidade" src="img/identidade.jpg" style="width:159px;padding-top:30px"/>
+            <div class="preloader-wrapper big active" id="w4_loader" style="display: none;">
+                    <div class="spinner-layer spinner-blue-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="gap-patch">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+           </h3>
+
+
+<div class="row" style="text-align: center">
+  <span style="font-size:11px;"> Atenção! A foto do documento deverá estar na posição vertical. </span>
+</div>
+  <a class="waves-effect waves-light btn-large btnPular width-100 m-b-20 animated bouncein delay-4" href="javascript:;" id="w4_takePic">FOTOGRAFAR</a>
+        <a class="waves-effect waves-light btn-large accent-color width-100 m-b-20 animated bouncein delay-4" href="javascript:;" id="w4_continuar" style="visibility: hidden">CONTINUAR</a>
+        <form enctype='multipart/form-data' id="w4_form">
+             <input type="file" id="w4_photo_identity" name="photo_identity" style="visibility: hidden"/>
+         </form>
+
+          <!-- Features -->
+        </div> <!-- End of Main Contents -->
+      </div> <!-- End of Page Content -->
+    </div> <!-- End of Page Container -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script>
+            function doToast(text) {
+                Materialize.toast(text, 5000)
+            }
+        </script>
+    <script>
+            var contractId = 19;
+            var clientId = '$2y$10$.2ko07jn.J0/x/6V4dE88OfQkaLFspVwsXjLmEO264nzLG/gAy3pO';
+            var clientSecret = '$2y$10$WG/qaWaSOmsCXlMonFgfi.1Kdo./Ztv/dKaORjlaTHiZKU2kuxpbq';
+            var token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvcmVzaWNhci5henVyZXdlYnNpdGVzLm5ldFwvYXBpXC9sb2dpbiIsImlhdCI6MTU2MzY0OTIzNywibmJmIjoxNTYzNjQ5MjM3LCJqdGkiOiJCcFJGSEs3RDdlYzhVZHpoIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwibmFtZSI6IkFkbWluIn0.e-5vcq4T4161gqJiCRIygQDfJhOjUWTjq67CWFu-Mns';
+        </script>
+
+    <script src="js/wizard3.js"></script>
+    <script src="js/wizard4.js"></script>
+    <script src="js/wizard5.js"></script>
+  </body>
+</html>

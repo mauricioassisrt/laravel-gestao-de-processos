@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    quickstart_win:
+      image: alpine
+      command: sh -c "cd /laradock && cp env-example .env && sed -i -e 's/COMPOSE_PATH_SEPARATOR=:/COMPOSE_PATH_SEPARATOR=;/g' .env"
+      volumes:
+        - .:/laradock
+
+    quickstart:
+      image: alpine
+      command: sh -c 'cd /laradock && cp env-example .env'
+      volumes:
+        - .:/laradock
